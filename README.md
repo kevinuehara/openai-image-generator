@@ -58,3 +58,7 @@ It will be using some tools:
 - Vite: frontend tooling
 - Tailwind: styling
 - OpenAI and DALL-E: AI to generate locations
+
+For the background of the page I used the Haikei App that will generate a svg for you and can be used anywhere:
+
+Haikei: https://app.haikei.app/
