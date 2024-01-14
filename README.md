@@ -1,30 +1,60 @@
-# React + TypeScript + Vite
+# Image Generator Open AI and DALL-E
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Image Generator Web Application using OpenAI and DALL-E to generate the four images for you.
 
-Currently, two official plugins are available:
+As commented above, this app wil provide a example of:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![first gif](images/example-openai.gif)
 
-## Expanding the ESLint configuration
+## OpenAI
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+OpenAI has trained cutting-edge language models that are very good at understanding and generating text. Our API provides access to these models and can be used to solve virtually any task that involves processing language.
 
-- Configure the top-level `parserOptions` property like this:
+You can generate you API KEY on: https://platform.openai.com/account/api-keys
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Environments
+
+It should create a `.env` file with bellow api keys
+
+| Environment          | Description        |
+| -------------------- | ------------------ |
+| VITE_OPEN_AI_API_KEY | API Key of OPEN AI |
+
+## Pre-requisites
+
+- Node
+- Yarn or NPM
+
+## How to run?
+
+1. Install dependencies
+
+```sh
+yarn
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+or
+
+```sh
+npm install
+```
+
+2. Running the project
+
+```sh
+yarn dev
+```
+
+or
+
+```sh
+npm run dev
+```
+
+## About Project
+
+It will be using some tools:
+
+- Vite: frontend tooling
+- Tailwind: styling
+- OpenAI and DALL-E: AI to generate locations
